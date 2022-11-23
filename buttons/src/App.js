@@ -1,26 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 import ButtonWithMessage from './components/ButtonWithMessage';
+import ButtonIncreaseDecrease from './components/ButtonIncreaseDecrease';
+import ButtonIncreDecreLabel from './components/ButtonIncreDecreLabel';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <ButtonIncreDecreLabel></ButtonIncreDecreLabel>
       </header>
       <div>
         <ButtonWithMessage></ButtonWithMessage>
+      </div>
+      <div>
+        <ButtonIncreaseDecrease></ButtonIncreaseDecrease>
       </div>
     </div>
   );

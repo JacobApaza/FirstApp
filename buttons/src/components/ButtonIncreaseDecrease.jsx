@@ -1,23 +1,28 @@
 import React from "react";
-class ButtonIncreaseDecrease extends React.Component() {
-    constructor ();
-    this.ButtonIncreaseDecrease = this.click.bind(this);
+
+class ButtonIncreaseDecrease extends React.Component {
+    
+    constructor (){
+        super();
+        this.click1 = this.click1.bind(this);
+        this.click2 = this.click2.bind(this);
+    }
+    
 
     click1 () {
-        alert ("incrementando");
+        alert ("Incrementando");
     }
     click2 () {
-        alert ("decrementando");
+        alert ("Decrementando");
     }
-    render (props){
+    render (props) {
         return(
-            <div>
-                <button onClick={this.click1}>+1</button>
-            </div>
-            <div>
+        <div>
+                <button onClick={this.click1}>+1</button>                
                 <button onClick={this.click2}>-1</button>
-            </div>
+        </div>
+            
         );
     }
 }
-return default ButtonIncreaseDecrease;
+export default ButtonIncreaseDecrease;
