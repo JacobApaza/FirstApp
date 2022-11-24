@@ -10,6 +10,7 @@ class DataForm extends React.Component {
         this.onChangeEmail = this.onChangeEmail.bind(this);
         this.onChangeSexo = this.onChangeSexo.bind(this);
         this.state = {name: "", fono: "",addressin: "",mail: "",sexo: ""};
+        
     }
 
     onChangeName(event){
@@ -43,13 +44,12 @@ class DataForm extends React.Component {
     }
 
     submit(){
-        //alert
-        console.log(this.state);
+        alert(JSON.stringify(this.state));
     }
 
     render (props) {
         return(
-            <div>
+            <table>
                 <tbody>
                 
                     <tr>
@@ -113,7 +113,7 @@ class DataForm extends React.Component {
                     </tr>          
                 </tbody>
                <button onClick={this.submit}>Submit</button>
-            </div>
+            </table>
         );
 
     }
