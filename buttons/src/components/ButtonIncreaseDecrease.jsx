@@ -8,13 +8,14 @@ class ButtonIncreaseDecrease extends React.Component {
         this.click2 = this.click2.bind(this);
     }
     
-
     click1 () {
         alert ("Incrementando");
     }
+
     click2 () {
         alert ("Decrementando");
     }
+    
     render (props) {
         return(
         <div>

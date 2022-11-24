@@ -9,9 +9,10 @@ import ButtonMatrix from './components/ButtonMatrix';
 function App() {
   return (
     <div className="App">
+      <ButtonMatrix rows="10" cols="10"></ButtonMatrix>
+
       <header className="App-header">
-        <ButtonMatrix></ButtonMatrix>
-        
+              
         <DataForm></DataForm>
         <ButtonIncreDecreLabel></ButtonIncreDecreLabel>
       </header>
